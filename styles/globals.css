@@ -25,7 +25,7 @@ h1 {
 }
 
 label {
-  @apply text-gray-600 text-sm ;
+  @apply text-gray-600 text-sm;
 }
 
 .btn-primary {
@@ -36,7 +36,8 @@ table.basic {
   @apply w-full bg-white;
 }
 
-table.basic thead tr td {
+table.basic thead tr td,
+table.basic thead tr th {
   @apply text-sm text-gray-600 uppercase border-b border-gray-200 px-4 py-2;
 }
 
@@ -45,7 +46,7 @@ table.basic tr td {
 }
 
 table.basic a {
-  @apply  text-sm py-1 px-4 rounded-sm shadow-md inline-flex gap-1 items-center mt-1;
+  @apply text-sm py-1 px-4 rounded-sm shadow-md inline-flex gap-1 items-center mt-1;
 }
 
 .btn-default,
