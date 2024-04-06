@@ -60,10 +60,10 @@ export default function ProductForm({
         data.append("file", file);
       });
       try {
-        const res = await axios.post("/api/upload", data);
-        setImages((oldImages) => {
-          return [...oldImages, ...res.data.links];
-        });
+        // const res = await axios.post("/api/upload", data);
+        // setImages((oldImages) => {
+        //   return [...oldImages, ...res.data.links];
+        // });
       } catch (err) {
         console.error(err, "err");
       } finally {
@@ -154,7 +154,10 @@ export default function ProductForm({
         >
           {!!images?.length &&
             images.map((link) => (
-              <div className="h-32 bg-white p-4 shadow-sm rounded-sm border border-gray-200" key={link}>
+              <div
+                className="h-32 bg-white p-4 shadow-sm rounded-sm border border-gray-200"
+                key={link}
+              >
                 <img className="rounded-lg" src={link} alt="" />
               </div>
             ))}
